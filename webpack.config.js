@@ -4,9 +4,8 @@ module.exports = {
   devtool: "source-map",
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'public/js'),
-    filename: 'bundle.js',
-    publicPath: '/js'
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js'
   },
   module: {
     rules: [
