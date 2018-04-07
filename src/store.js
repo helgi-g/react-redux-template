@@ -16,4 +16,11 @@ const enhancer = composeEnhancers(applyMiddleware(thunk, routerMiddleware(histor
 
 const store = createStore(reducer, enhancer)
 
+if (module.hot) {
+  module.hot.accept(reducer, () => {
+    const nextRootReducer = reducer;
+    store.replaceReducer(nextRootReducer);
+  });
+}
+
 export default store
