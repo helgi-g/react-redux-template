@@ -32,6 +32,9 @@ Template for developing React/Redux application.
 ## Usage
 
 ```
+# clone the repository
+git clone git@github.com:helgi-g/react-redux-template.git .
+
 # install dependencies
 npm install
 
